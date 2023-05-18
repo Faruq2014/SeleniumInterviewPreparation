@@ -5,9 +5,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 /*for mouse hover, drag and drop, double click and so on we use Action act= New Action(driver);
  */
 public class Q13_ActionClass {
@@ -21,8 +24,10 @@ public class Q13_ActionClass {
 	}
  public void mouseHover() {
 	 
-	 System.setProperty("webdriver.gecko.driver","C:\\gecko\\geckodriver\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+	 //System.setProperty("webdriver.gecko.driver","C:\\gecko\\geckodriver\\geckodriver.exe");
+		//WebDriver driver = new FirefoxDriver();
+		  WebDriverManager.chromedriver().setup();
+			WebDriver driver = new ChromeDriver();
      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
      driver.get("http://www.onlinestore.toolsqa.wpengine.com");
@@ -49,8 +54,10 @@ public class Q13_ActionClass {
 	 
 
      String baseUrl = "http://demo.guru99.com/test/newtours/";
-     System.setProperty("webdriver.gecko.driver","C:\\gecko\\geckodriver\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+     //System.setProperty("webdriver.gecko.driver","C:\\gecko\\geckodriver\\geckodriver.exe");
+		//WebDriver driver = new FirefoxDriver();
+		 WebDriverManager.chromedriver().setup();
+			WebDriver driver = new ChromeDriver();
 
              driver.get(baseUrl);           
              WebElement link_Home = driver.findElement(By.linkText("Home"));

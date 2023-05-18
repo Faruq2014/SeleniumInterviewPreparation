@@ -3,9 +3,14 @@ package com.SeleniumRegularInterviewQuestion;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
-public class Question1_verifyAssert {
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Q1_verifyAssert {
 
 	public static void main(String[] args) {
 		// how many way you can verify a web page. 
@@ -41,8 +46,38 @@ public class Question1_verifyAssert {
 		 * but strong assert, if assert fail execution will stop. 
 		 * 
 		 */
-		
+		Q1_verifyAssert q1= new Q1_verifyAssert();
+		q1.verfyMethod();
+		q1.validationMethod();
 
+	}
+	
+	public void verfyMethod() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://login.salesforce.com/");
+		String actualUrl="https://login.salesforce.com11/";
+		String ExptUrl=driver.getCurrentUrl();
+		
+		if (ExptUrl.equalsIgnoreCase(actualUrl)) {
+			System.out.println("we are on the right page");
+		}else {
+			System.out.println("you are on wrong page");
+		}
+		driver.quit();
+	}
+	
+	
+	public void validationMethod() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://login.salesforce.com/");
+		String actualUrl="https://login.salesforce.com11/";
+		String ExptUrl=driver.getCurrentUrl();
+		
+		Assert.assertEquals("you are on Wrong page ,,,,",actualUrl, ExptUrl);
+		driver.quit();
+		
 	}
 
 }

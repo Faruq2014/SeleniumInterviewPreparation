@@ -21,7 +21,7 @@ public class Q10_allert {
 		// how to accept an allert:
 		
 		
-		  WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		 
 		/*// how to accept an allert:
@@ -55,8 +55,9 @@ public class Q10_allert {
         Thread.sleep(5000);
         		
         // Accepting alert		
-        alert.accept();	
-        driver.close();
+        alert.accept();
+        //alert.dismiss();
+        //driver.close();
     }	
 
 

@@ -4,12 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Q2_howToLunchBrowser {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		 
 		driver.get("https://www.facebook.com/");
 		
 		// How to lunch browser in selenium?
@@ -59,6 +60,17 @@ public class Q2_howToLunchBrowser {
 		 *  Because if i use if else conditions for different driver then i have to use this way.
 		 * 
 		 */
+		inteface();
+	}
+	
+	public static void inteface() {
+		//WebDriver driver = new ChromeDriver(); // parent child relation, dynamic polymorphism,
+		//WebDriver driver1 = new WebDriver(); // interface can not create an object
+		//ChromeDriver driver2 = new ChromeDriver();// only implementing chrome class, and not having dynamic polymorphism,
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver3= new ChromeDriver();
+		driver3.get("https://login.salesforce.com/");
 	}
 	
 
