@@ -42,10 +42,10 @@ public class Q8_WebDriver {
 		//how to get text
 		String st1=driver.findElement(By.xpath("//button[starts-with(@id,'u_0_d')]")).getText();
 		System.out.println("the text value is "+" "+st1);
-		
+		//Three ways we can submit a form
 		// how do submit a form using web driver?
 		//using submit function instated of click.
-		//driver.findElement(By.xpath("//button[starts-with(@id,'u_0')]")).submit();
+		driver.findElement(By.xpath("//button[starts-with(@id,'u_0')]")).submit();
 		
 		// how to press ENTER key on text box in selenium web driver.
 		//what is the alternative way to submit a form?
@@ -55,20 +55,20 @@ public class Q8_WebDriver {
 		// how to click on hyper link by using selenium web driver.
 		/*by using click method. and using link text or partial link text method. 
 		 */
-		//driver.findElement(By.partialLinkText("Forgot")).click();
+		driver.findElement(By.partialLinkText("Forgot")).click();
 		
 		// do we need selenium server to execute selenium web driver.
 		/*if we use our local machine, then we do not need selenium stand alone server to run web driver function.
 		 * but if we run it selenium grid then to create grid and hub connection, we need selenium stand alone server.
 		 */
-		// what is the alternative way of using driver.get("url"); and what is the difference?
+	 //what is the alternative way of using driver.get("url"); and what is the difference?
 		
-		/*driver.get("https://www.facebook.com");
+		//driver.get("https://www.facebook.com");
 		driver.navigate().to("https://facebook.com");
-		#1.get command will wait until whole page is loaded and it is always recommended to use.
-		but navigate command will not wait until page load. if you use it, make sure put driver.wait.untilpageload();
-		#2 navigate command has all the options of forward, backward, refresh, and so on.   
-		*/
+		//1.get command will wait until whole page is loaded and it is always recommended to use.
+		//but navigate command will not wait until page load. if you use it, make sure put driver.wait.untilpageload();
+		//#2 navigate command has all the options of forward, backward, refresh, and so on.   
+		
 		// how do we delete cockie in selenium
 		
 		//driver.manage().deleteAllCookies();

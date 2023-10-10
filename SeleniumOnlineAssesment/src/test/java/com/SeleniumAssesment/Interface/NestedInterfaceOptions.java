@@ -3,7 +3,6 @@ package com.SeleniumAssesment.Interface;
 import java.util.Set;
 
 import org.openqa.selenium.Cookie;
-import org.openqa.selenium.WebDriver.ImeHandler;
 import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.WebDriver.Window;
@@ -53,11 +52,7 @@ public class NestedInterfaceOptions implements Options{
 		return null;
 	}
 
-	@Override
-	public ImeHandler ime() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 
 	@Override
 	public Window window() {

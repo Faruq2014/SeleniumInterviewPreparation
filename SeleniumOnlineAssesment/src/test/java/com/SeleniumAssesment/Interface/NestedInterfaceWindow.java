@@ -42,4 +42,10 @@ public class NestedInterfaceWindow implements Window{
 		
 	}
 
+	@Override
+	public void minimize() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
