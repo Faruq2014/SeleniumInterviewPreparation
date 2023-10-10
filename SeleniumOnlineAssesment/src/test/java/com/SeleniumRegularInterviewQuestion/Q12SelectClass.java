@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Q12SelectClass {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -19,20 +21,21 @@ public class Q12SelectClass {
 		 * select by visible text, select by index and select by value. 
 		 * 
 		 */
-		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
 		 
-	 
+		  WebDriverManager.chromedriver().setup();
+			WebDriver driver = new ChromeDriver();
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
  
 		
-		driver.get("http://toolsqa.wpengine.com/automation-practice-form");
- 
+		driver.get("https://www.facebook.com/");
+ driver.findElement(By.xpath("//a[starts-with(@id,'u_0_2_')]")).click();
+   WebElement ele=driver.findElement(By.xpath("//select[@id='day']"));
+		Select oSelect = new Select(ele);
 		
-		Select oSelect = new Select(driver.findElement(By.id("continents")));
- 
 		// Step 4:) Select option 'Europe' (Use selectByIndex)
-		oSelect.selectByVisibleText("Europe");
+		//oSelect.selectByVisibleText("Apr");
  
 		// Using sleep command so that changes can be noticed
 		Thread.sleep(2000);
@@ -53,7 +56,7 @@ public class Q12SelectClass {
 			// Printing the stored value
 			System.out.println(sValue);
 			// Putting a check on each option that if any of the option is equal to 'Africa" then select it 
-			if(sValue.equals("Africa")){
+			if(sValue.equals("Apr")){
 				oSelect.selectByIndex(i);
 				break;
 				}

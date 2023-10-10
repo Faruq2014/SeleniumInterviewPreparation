@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Q7JsExecuterWholeclass {
 @Test
 	public static void main(String[] args) {
@@ -18,9 +20,10 @@ public class Q7JsExecuterWholeclass {
 		 // WebDriver driver;
 		 
 		 
-	System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
-	WebDriver driver = new ChromeDriver();
-	 
+	//System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
+	//WebDriver driver = new ChromeDriver();
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver= new ChromeDriver();
 			driver.get("https://www.facebook.com/");
 		 WebElement loginButton = driver.findElement(By.xpath("//*[@id='next']"));
 		 
