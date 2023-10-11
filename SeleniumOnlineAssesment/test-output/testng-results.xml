@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-10T19:38:50 EDT" name="Default suite" finished-at="2023-10-10T19:38:53 EDT" duration-ms="3395">
+  <suite started-at="2023-10-10T20:53:49 EDT" name="Default suite" finished-at="2023-10-10T20:53:52 EDT" duration-ms="2892">
     <groups>
     </groups>
-    <test started-at="2023-10-10T19:38:50 EDT" name="Default test" finished-at="2023-10-10T19:38:53 EDT" duration-ms="3395">
-      <class name="com.SeleniumAssesment.searchContext.WebDriverMethodQuestions">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.SeleniumAssesment.searchContext.WebDriverMethodQuestions@4b5d6a01]" started-at="2023-10-10T19:38:50 EDT" name="init" finished-at="2023-10-10T19:38:52 EDT" duration-ms="2148" status="PASS">
+    <test started-at="2023-10-10T20:53:49 EDT" name="Default test" finished-at="2023-10-10T20:53:52 EDT" duration-ms="2892">
+      <class name="com.SeleniumAssesment.dropdown.DropDown">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.SeleniumAssesment.dropdown.DropDown@49d904ec]" started-at="2023-10-10T20:53:49 EDT" name="init" finished-at="2023-10-10T20:53:51 EDT" duration-ms="2191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="getFacebookNavigate()[pri:0, instance:com.SeleniumAssesment.searchContext.WebDriverMethodQuestions@4b5d6a01]" started-at="2023-10-10T19:38:52 EDT" name="getFacebookNavigate" finished-at="2023-10-10T19:38:53 EDT" duration-ms="1218" status="PASS">
+        <test-method signature="whatIsDropDown()[pri:0, instance:com.SeleniumAssesment.dropdown.DropDown@49d904ec]" started-at="2023-10-10T20:53:51 EDT" name="whatIsDropDown" finished-at="2023-10-10T20:53:52 EDT" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getFacebookNavigate -->
-        <test-method is-config="true" signature="destroy()[pri:0, instance:com.SeleniumAssesment.searchContext.WebDriverMethodQuestions@4b5d6a01]" started-at="2023-10-10T19:38:53 EDT" name="destroy" finished-at="2023-10-10T19:38:53 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- whatIsDropDown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:com.SeleniumAssesment.dropdown.DropDown@49d904ec]" started-at="2023-10-10T20:53:52 EDT" name="destroy" finished-at="2023-10-10T20:53:52 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-      </class> <!-- com.SeleniumAssesment.searchContext.WebDriverMethodQuestions -->
+      </class> <!-- com.SeleniumAssesment.dropdown.DropDown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
