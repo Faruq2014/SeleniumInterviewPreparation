@@ -1,4 +1,4 @@
-package com.SeleniumRegularInterviewQuestion;
+package com.SeleniumAssesment.interviewQuestions;
 
 public class Q4_authoInPopUp {
 
