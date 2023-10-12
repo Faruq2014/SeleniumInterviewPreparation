@@ -1,4 +1,4 @@
-package com.SeleniumRegularInterviewQuestion;
+package com.SeleniumAssesment.interviewQuestions;
 
 import org.testng.annotations.Test;
 

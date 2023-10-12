@@ -1,4 +1,4 @@
-package com.SeleniumRegularInterviewQuestion;
+package com.SeleniumAssesment.interviewQuestions;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package com.SeleniumRegularInterviewQuestion;
+package com.SeleniumAssesment.interviewQuestions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;

@@ -1,4 +1,4 @@
-package com.SeleniumRegularInterviewQuestion;
+package com.SeleniumAssesment.interviewQuestions;
 /*// how do you read test data from excels?
  * test data can efficiently be read from excel sheet using JXL and POI API. POI API has 
  * many advantages than JXL. I always use Apache POI.
