@@ -1,75 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24998" started-at="2020-11-05T19:18:12 EST" finished-at="2020-11-05T19:18:37 EST">
+  <suite started-at="2023-10-10T20:53:49 EDT" name="Default suite" finished-at="2023-10-10T20:53:52 EDT" duration-ms="2892">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24998" started-at="2020-11-05T19:18:12 EST" finished-at="2020-11-05T19:18:37 EST">
-      <class name="com.TotalQa.WebDriverWaitTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.TotalQa.WebDriverWaitTest@5a8806ef]" name="init" is-config="true" duration-ms="8709" started-at="2020-11-05T19:18:12 EST" finished-at="2020-11-05T19:18:21 EST">
+    <test started-at="2023-10-10T20:53:49 EDT" name="Default test" finished-at="2023-10-10T20:53:52 EDT" duration-ms="2892">
+      <class name="com.SeleniumAssesment.dropdown.DropDown">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.SeleniumAssesment.dropdown.DropDown@49d904ec]" started-at="2023-10-10T20:53:49 EDT" name="init" finished-at="2023-10-10T20:53:51 EDT" duration-ms="2191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="textToBePresentInElementLocated()[pri:0, instance:com.TotalQa.WebDriverWaitTest@5a8806ef]" name="textToBePresentInElementLocated" duration-ms="15614" started-at="2020-11-05T19:18:21 EST" finished-at="2020-11-05T19:18:37 EST">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for text ('Time left: 7 seconds') to be present in element found by By.xpath: //*[@id='u_0_2'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-INQUNRP', ip: '192.168.181.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Faruq\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8119c15247f530be157c88e54503a101]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Time left: 7 seconds') to be present in element found by By.xpath: //*[@id='u_0_2'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-INQUNRP', ip: '192.168.181.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Faruq\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8119c15247f530be157c88e54503a101
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-at com.TotalQa.WebDriverWaitTest.textToBePresentInElementLocated(WebDriverWaitTest.java:69)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="whatIsDropDown()[pri:0, instance:com.SeleniumAssesment.dropdown.DropDown@49d904ec]" started-at="2023-10-10T20:53:51 EDT" name="whatIsDropDown" finished-at="2023-10-10T20:53:52 EDT" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- textToBePresentInElementLocated -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.TotalQa.WebDriverWaitTest@5a8806ef]" name="destroy" is-config="true" duration-ms="631" started-at="2020-11-05T19:18:37 EST" finished-at="2020-11-05T19:18:37 EST">
+        </test-method> <!-- whatIsDropDown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:com.SeleniumAssesment.dropdown.DropDown@49d904ec]" started-at="2023-10-10T20:53:52 EDT" name="destroy" finished-at="2023-10-10T20:53:52 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-      </class> <!-- com.TotalQa.WebDriverWaitTest -->
+      </class> <!-- com.SeleniumAssesment.dropdown.DropDown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

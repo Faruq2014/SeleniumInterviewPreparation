@@ -1,5 +1,6 @@
 package com.SeleniumAssesment.WebDriver;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -67,7 +68,7 @@ public class WebDriverWaitTest {
 	@Test(enabled=true)
 	public void  textToBePresentInElementLocated() {
 		//System.out.println(driver.findElement(By.id("u_0_2")));
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10, 0));
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//*[@id='u_0_2']"), "Time left: 1 seconds"));
 		
 	}
