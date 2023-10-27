@@ -35,7 +35,8 @@ public class LoginTest {
 	// 
 	/*
 	 * 
-2.	what is repository class==LoginPage-->The class has all the methods and source code
+2.	what is repository class==LoginPage-->The class has all the properties
+      such as variable,methods,constructor==source code
 3.	what is client class==LoginTest--> who has tests
 4.	what is has a relationship concept in Java
       one class build relationship by calling another class
@@ -57,9 +58,17 @@ public class LoginTest {
     please learn about it
 9.	how page object model constructor work together.
     in the page side and Test side driver hand shake 
-    happen and page side constructor take responsiblities
+    happen and page side constructor take responsibilities
     to initialized instance properties.
 
+	 */
+	/*
+	 * what is a constructor==instantiate instance properties
+	 * instance properties== 
+	 *     instance variable
+	 *     instance method
+	 *     instance block
+	 *     
 	 */
 	WebDriver driver;
 	
@@ -72,6 +81,11 @@ public class LoginTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
+	//instance block
+	{System.out.println("hello muhit");}
+	//static block
+	static {System.out.println("hello muhit");}
+	
 	@Test
 	public void validLoginTest() {
 		LoginPage lp = new LoginPage(driver);
