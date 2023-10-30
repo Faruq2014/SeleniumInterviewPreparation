@@ -9,7 +9,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Q2_howToLunchBrowser {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		
