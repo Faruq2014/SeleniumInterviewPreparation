@@ -22,7 +22,7 @@ public class LoginPage {
 	
 	
 	12.	What is find by
-	it is a type of locators strategy for page objec model
+	it is a type of locators strategy for page object model
 	to locate Web Elements
 	13.	what is find by how
     it is a type of locators strategy for page objec model
