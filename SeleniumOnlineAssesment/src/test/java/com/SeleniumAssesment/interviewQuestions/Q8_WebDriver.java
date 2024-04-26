@@ -15,7 +15,7 @@ public class Q8_WebDriver {
 		// how to clear a text from a input text.
 		//System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 	    driver= new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.id("email")).sendKeys("123@mail.com");

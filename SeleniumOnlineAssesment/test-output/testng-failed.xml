@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SeleniumAssesment.dropdown.DropDown">
+      <class name="com.SeleniumAssesment.searchContext.WebDriverMethodQuestions">
         <methods>
           <include name="destroy"/>
           <include name="init"/>
-          <include name="whatIsDropDown"/>
+          <include name="getFacebookNavigate"/>
         </methods>
-      </class> <!-- com.SeleniumAssesment.dropdown.DropDown -->
+      </class> <!-- com.SeleniumAssesment.searchContext.WebDriverMethodQuestions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
