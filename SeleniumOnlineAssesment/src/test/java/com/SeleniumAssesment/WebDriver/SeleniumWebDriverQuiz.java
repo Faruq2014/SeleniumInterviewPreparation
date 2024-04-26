@@ -1,5 +1,6 @@
 package com.SeleniumAssesment.WebDriver;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -37,7 +38,7 @@ public class SeleniumWebDriverQuiz {
 			driver = new ChromeDriver();
 			driver.get("https://www.facebook.com/");
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		}
 

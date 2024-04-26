@@ -1,5 +1,6 @@
 package com.SeleniumAssesment.searchContext;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,16 +17,19 @@ public class WebDriverMethodQuestions {
 	@BeforeMethod
 	public void init() {
 // how to open a browser?
-	    WebDriverManager.chromedriver().setup();
+	   // WebDriverManager.chromedriver().setup();
+		//System.setProperty("webdriver.chrome.driver", 
+			//	"C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
+		
 		// how to open a application?
 		driver.get("https://www.facebook.com/");
 		//// how to maximize window?
 		driver.manage().window().maximize();
 		// what is implicitlyWait
 		//how to set 10 seconds implicitlyWait
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	//@Test
 	public void getFacebookTitle() {
